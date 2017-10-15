@@ -11,10 +11,6 @@ import org.springframework.context.annotation.PropertySource;
 
 import com.jolbox.bonecp.BoneCPDataSource;
 
-//@Configuration一般与@ComponentScan一起使用.因为在xml中配置扫描包嘛
-@Configuration //通过该注解来表明该类是一个Spring的配置，相当于一个xml文件. 
-//这个config要作为参数作为初始化容器的参数传入.
-@ComponentScan(basePackages ="com.wenzhihao") //配置扫描包,会扫描com/wenzhihao下的所有注解类.
 @PropertySource(value= {"classpath:jdbc.properties"},ignoreResourceNotFound=true)//properties资源注解类似placeHolder
 public class SpringConfig {
     
