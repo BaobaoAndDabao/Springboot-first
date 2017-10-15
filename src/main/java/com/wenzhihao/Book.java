@@ -2,7 +2,7 @@ package com.wenzhihao;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
-@Component //测试 3
+@Component //测试4
 @ConfigurationProperties(prefix="book")
 public class Book {
 	
